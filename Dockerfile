@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ## Build
-FROM golang:1.18-buster AS build
+FROM golang:1.20-buster AS build
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ WORKDIR /
 
 COPY --from=build /app/bin/netlify-cms-oauth-provider /app/netlify-cms-oauth-provider
 
-EXPOSE 3000
+EXPOSE 3001
 
 USER nonroot:nonroot
 

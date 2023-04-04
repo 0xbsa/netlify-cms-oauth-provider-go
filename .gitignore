@@ -2,7 +2,6 @@
 Thumbs.db
 
 /.idea
-/.env*
 
 /bin
 /node_modules
